@@ -1,0 +1,16 @@
+  zap:
+    container_name: zap
+    image: owasp/zap2docker-stable
+    user: zap
+    ports:
+      - 8090:8090
+    entrypoint:
+      - zap-x.sh
+      - -daemon
+      - -host 0.0.0.0
+      - -port 8090
+      - -config api.addrs.addr.name=.*
+      - -config api.addrs.addr.regex=true
+#     - -config api.key=gg3m8k2e9014sf8f6t15ql0900
+      - -config api.disablekey=true
+
