@@ -31,7 +31,7 @@ PUT http://[your elasticsearch container listen IP here]:9200/scans/
 ; Mostly errors you may get from scan script will tell you about ZAP container is inaccessible
 ; if you got the error first check ZAP container ip and port settings in the script.
 
-;After the scan in over you will see resulting message in your std.out and full report will sended to the elasticsearch container
+;After the scan is over you will see resulting message in your std.out and full report will sended to the elasticsearch container
 ; so you can get it by Kibana http://[your kibana container IP here ]:5601
-; to be continued.
+; to be continued...
 
